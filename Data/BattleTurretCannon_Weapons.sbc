@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Weapons>
+		<!-- Aden -->
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>LargeAden</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="1100" ShootSoundName="Aden" />
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>SmallAden</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="1100" ShootSoundName="Aden" />
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>
+			</Weapon>
+		
+		<!-- Bofors -->
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>40mmBofors</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="1" ShootSoundName="40mmBofors" ShotsInBurst="4"/>
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>
+			<!--ReloadTime>4000</ReloadTime-->
+			</Weapon>
+
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>40mmBofors_small</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="1" ShootSoundName="40mmBofors" ShotsInBurst="4"/>
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>
+			<!--ReloadTime>4000</ReloadTime-->
+			</Weapon>
+		
+		<!-- Vulcan -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>LargeVulcan</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="Vulcan" />
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>SmallVulcan</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="Vulcan" />
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>MiniVulcan</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1000" ShootSoundName="Vulcan"  />
+				<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+				<DeviateShotAngle>1.5</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>5</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>VulcanGun</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1300" ShootSoundName="Vulcan" />
+				<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+				<DeviateShotAngle>1</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>5</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+		
+		<!-- 300 weapons -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_1_300</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_2_300</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_3_300</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>Side300Cannon</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>  
+
+		<!-- 300 Weapons Small -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_1_300_small</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_2_300_small</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_3_300_small</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>Side300Cannonsmall</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="300mmCannon" />  
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>		
+
+		<!-- 900 weapons -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>AutoCannon_1_900</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="12" ShootSoundName="900mmCannon" />  
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>AutoCannon_2_900</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="24" ShootSoundName="900mmCannon" />
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>
+			</Weapon> 
+
+			<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>AutoCannon_3_900</SubtypeId>
+			</Id>
+			<ProjectileAmmoData RateOfFire="36" ShootSoundName="900mmCannon" />
+			<DeviateShotAngle>0</DeviateShotAngle>
+			<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+			<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+			<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+			<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+			</AmmoMagazines>				
+			</Weapon> 
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>Side900Cannon</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="900mmCannon" />  
+				<NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 		
+
+		<!-- Sentry Gatling -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>SmallSentryGatling</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="WepShipGatlingShot" />
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+		<!-- Sentry Gun -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>SmallSentryGun</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="1" ShootSoundName="WepTurretInteriorFire" />
+				<ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon> 
+
+		<!-- Little David -->
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>LittleDavid</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="8" ShootSoundName="LittleDavid" />
+				<ReleaseTimeAfterFire>10000</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0.5</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>100</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+			<Weapon>
+				<Id>
+					<TypeId>WeaponDefinition</TypeId>
+					<SubtypeId>LittleDavidSmall</SubtypeId>
+				</Id>
+				<ProjectileAmmoData RateOfFire="8" ShootSoundName="LittleDavid" />
+				<ReleaseTimeAfterFire>7500</ReleaseTimeAfterFire>
+				<DeviateShotAngle>0.5</DeviateShotAngle>
+				<MuzzleFlashLifeSpan>100</MuzzleFlashLifeSpan>
+				<NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+				<AmmoMagazines>
+					<AmmoMagazine Subtype="Energy" />
+				</AmmoMagazines>
+			</Weapon>
+
+	</Weapons>
+</Definitions>

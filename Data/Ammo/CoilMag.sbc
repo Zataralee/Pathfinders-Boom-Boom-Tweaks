@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_CoilgunH_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun AP-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxH.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>450</Mass>
+      <Volume>225</Volume>
+      <Model>Models\MXA_AmmoBoxH.mwm</Model>
+      <Capacity>3</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_Coil305Ammo</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun AP-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil305Ammo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>150</Mass>
+      <Volume>75</Volume>
+      <Model>Models\Coilguns\MXA_Coil305Ammo.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_Coil305HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun HE-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil305HEAmmo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>150</Mass>
+      <Volume>75</Volume>
+      <Model>Models\Coilguns\MXA_Coil305HEAmmo.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_CoilgunL_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>155mm Coilgun AP-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxL.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>450</Mass>
+      <Volume>225</Volume>
+      <Model>Models\MXA_AmmoBoxL.mwm</Model>
+      <Capacity>6</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_Coil155HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>155mm Coilgun HE-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxL.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>450</Mass> <!--75 per round-->
+      <Volume>225</Volume> <!--37.5 per round-->
+      <Model>Models\MXA_AmmoBoxL.mwm</Model>
+      <Capacity>6</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_CoilgunPD_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>50mm Coilgun HE-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxPD.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>10</Mass>
+      <Volume>25</Volume>
+      <Model>Models\MXA_AmmoBoxPD.mwm</Model>
+      <Capacity>256</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_Sabre_Coilgun_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>30mm Coilgun HE-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Sabre_Coilgun_Ammo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>10</Mass>
+      <Volume>25</Volume>
+      <Model>Models\Coilguns\MXA_Sabre_Coilgun_Ammo.mwm</Model>
+      <Capacity>512</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_BreakWater_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>520mm Coilgun AP-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_BreakWater_Ammo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>840</Mass>
+      <Volume>420</Volume>
+      <Model>Models\Coilguns\MXA_BreakWater_Ammo.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_BreakWater_APAmmo</SubtypeId>
+      </Id>
+      <DisplayName>520mm Coilgun AP-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil520Ammo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>280</Mass>
+      <Volume>140</Volume>
+      <Model>Models\Coilguns\MXA_Coil520Ammo.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MXA_BreakWater_HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>520mm Coilgun HE-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil520HEAmmo.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>1.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>280</Mass>
+      <Volume>140</Volume>
+      <Model>Models\Coilguns\MXA_Coil520HEAmmo.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Blank" />
+   </AmmoMagazine>
+   
+  </AmmoMagazines>
+</Definitions>

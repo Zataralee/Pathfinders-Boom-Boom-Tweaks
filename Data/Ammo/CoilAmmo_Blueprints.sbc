@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>  
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_BreakWater_APAmmo</SubtypeId>
+      </Id>
+      <DisplayName>520mm AP-Stack</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil520Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="360" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="60" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="40" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_BreakWater_Ammo" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_BreakWater_HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>520mm HE-Stack</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil520HEAmmo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="240" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="40" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="24" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="40" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_BreakWater_HEAmmo" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_BreakWater_Conversion</SubtypeId>
+      </Id>
+      <DisplayName>520mm Coilgun AP-Round Unpacking</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxH.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_BreakWater_Ammo" />
+      </Prerequisites>
+      <Result Amount="3" TypeId="AmmoMagazine" SubtypeId="MXA_BreakWater_APAmmo" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	
+	<!--
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_CoilgunH_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>305mm AP-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxH.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="110" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_CoilgunH_Ammo" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	-->
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil305Ammo</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun AP-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil305Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="180" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="15" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Coil305Ammo" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil305HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun HE-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil305Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="120" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="12" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="20" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Coil305Ammo" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil305_Conversion</SubtypeId>
+      </Id>
+      <DisplayName>305mm Coilgun AP-Round Unpacking</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxH.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_CoilgunH_Ammo" />
+      </Prerequisites>
+      <Result Amount="3" TypeId="AmmoMagazine" SubtypeId="MXA_Coil305Ammo" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	
+	
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil155Ammo</SubtypeId>
+      </Id>
+      <DisplayName>155mm Coilgun AP-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil155Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="450" TypeId="Ingot" SubtypeId="Iron" /> <!--75 per round-->
+        <Item Amount="75" TypeId="Ingot" SubtypeId="Nickel" /> <!--12.5 per round-->
+		<Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_CoilgunL_Ammo" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<!--
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil155_Conversion</SubtypeId>
+      </Id>
+      <DisplayName>155mm Coilgun AP-Round Unpacking</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxL.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_CoilgunL_Ammo" />
+      </Prerequisites>
+      <Result Amount="3" TypeId="AmmoMagazine" SubtypeId="MXA_Coil155Ammo" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>  
+    </Blueprint>
+	-->
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Coil155HEAmmo</SubtypeId>
+      </Id>
+      <DisplayName>155mm Coilgun HE-Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Coil155Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" /> <!--50 per round-->
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Nickel" /> <!--8.33 per round-->
+		<Item Amount="30" TypeId="Ingot" SubtypeId="Magnesium" /> <!--5 per round-->
+		<Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" /> <!--8.33 per round-->
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Coil155HEAmmo" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_CoilgunPD_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>50mm Coilgun HE-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_AmmoBoxPD.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Magnesium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_CoilgunPD_Ammo" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_Sabre_Coilgun_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>30mm Coilgun HE-Round Container</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_Sabre_Coilgun_Ammo.png</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="75" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Magnesium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Sabre_Coilgun_Ammo" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+
+  </Blueprints>
+  
+    <BlueprintClassEntries>
+   
+	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_BreakWater_APAmmo" />	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_BreakWater_HEAmmo" />
+		<Entry Class="Components" BlueprintSubtypeId="MXA_BreakWater_Conversion" />			
+		<Entry Class="Components" BlueprintSubtypeId="MXA_Coil305Ammo" />
+		<Entry Class="Components" BlueprintSubtypeId="MXA_Coil305_Conversion" />			
+		<Entry Class="Components" BlueprintSubtypeId="MXA_Coil155Ammo" />	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_Coil155_Conversion" />	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_CoilgunPD_Ammo" />
+		<Entry Class="Components" BlueprintSubtypeId="MXA_Sabre_Coilgun_Ammo" />
+
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_BreakWater_APAmmo" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_BreakWater_HEAmmo" />
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_BreakWater_Conversion" />
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_Coil305Ammo" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_Coil305_Conversion" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_Coil155Ammo" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_Coil155_Conversion" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_CoilgunPD_Ammo" />
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_Sabre_Coilgun_Ammo" />
+
+	
+  </BlueprintClassEntries>
+</Definitions>

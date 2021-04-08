@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>   
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Vulcan20x102</SubtypeId>
+      </Id>
+      <DisplayName>"20x102mm" Vulcan</DisplayName>
+      <Icon>Textures\GUI\GatlingAmmo20x102.dds</Icon>
+      <Prerequisites>
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Naonite" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Vulcan20x102" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>300mmShell_HE</SubtypeId>
+      </Id>
+      <DisplayName>"300mm" Shell HE</DisplayName>
+      <Icon>Textures\GUI\300mmShell_HE.dds</Icon>
+      <Prerequisites>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="75" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="30" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="300mmShell_HE" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>300mmShell_AP</SubtypeId>
+      </Id>
+      <DisplayName>"300mm" Shell AP</DisplayName>
+      <Icon>Textures\GUI\300mmShell_AP.dds</Icon>
+      <Prerequisites>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="75" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="30" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="300mmShell_AP" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>900mmShell_HE</SubtypeId>
+      </Id>
+      <DisplayName>"900mm" Shell HE</DisplayName>
+      <Icon>Textures\GUI\900mmShell_HE.dds</Icon>
+      <Prerequisites>
+        <Item Amount="900" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="225" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="60" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="900mmShell_HE" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>900mmShell_AP</SubtypeId>
+      </Id>
+      <DisplayName>"900mm" Shell AP</DisplayName>
+      <Icon>Textures\GUI\900mmShell_AP.dds</Icon>
+      <Prerequisites>
+        <Item Amount="900" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="225" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="60" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="900mmShell_AP" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bofors40mm</SubtypeId>
+      </Id>
+      <DisplayName>"40mm" Bofors</DisplayName>
+      <Icon>Textures\GUI\40mmShell.dds</Icon>
+      <Prerequisites>
+        <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="12" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Naonite" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Bofors40mm" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Aden30x113</SubtypeId>
+      </Id>
+      <DisplayName>"30x113" Aden</DisplayName>
+      <Icon>Textures\GUI\AdenAmmo30x113.dds</Icon>
+      <Prerequisites>
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="12" TypeId="Ingot" SubtypeId="Naonite" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Aden30x113" />
+      <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LittleDavid</SubtypeId>
+      </Id>
+      <DisplayName>Little David Shell</DisplayName>
+      <Icon>Textures\GUI\Little_DavidShell.dds</Icon>
+      <Prerequisites>
+        <Item Amount="600" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="255" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="12" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="LittleDavidMag" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>    
+	
+  </Blueprints>
+</Definitions>

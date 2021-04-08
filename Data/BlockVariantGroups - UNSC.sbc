@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<BlockVariantGroups>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_Coilgun" />
+			<Icon>Textures\GUI\Icons\MXA_CoilgunH.png</Icon>
+			<DisplayName>UNSC Coilgun Turrets</DisplayName>
+			<Description></Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunH" />
+				<Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunL" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_BreakWater" />
+			</Blocks>
+		</BlockVariantGroup>
+		
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_CoilgunPD" />
+			<Icon>Textures\GUI\Icons\MXA_CoilgunPD.png</Icon>
+			<DisplayName>UNSC Point Defense</DisplayName>
+			<Description></Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_CoilgunPD" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Rampart2" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_CoilgunPD_S" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Rampart2_S" />
+			</Blocks>
+		</BlockVariantGroup>
+		
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_Coilgun_MLA" />
+			<Icon>Textures\GUI\Icons\MXA_Sabre_Coilgun.png</Icon>
+			<DisplayName>UNSC Machine-Linked Autocannon</DisplayName>
+			<Description></Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_Coilgun" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_E_Coilgun" />
+			</Blocks>
+		</BlockVariantGroup>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_MAC" />
+			<Icon>Textures\GUI\Icons\MXA_MACL.png</Icon>
+			<DisplayName>UNSC Heavy Coil MACs</DisplayName>
+			<Description></Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SMAC" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL_S" />
+			</Blocks>
+		</BlockVariantGroup>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_Missile" />
+			<Icon>Textures\GUI\Icons\MXA_ArcherPods.png</Icon>
+			<DisplayName>UNSC Missile Pods</DisplayName>
+			<Description></Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_ArcherPods" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M58ArcherPods" />
+			</Blocks>
+		</BlockVariantGroup>
+
+
+	</BlockVariantGroups>
+</Definitions>

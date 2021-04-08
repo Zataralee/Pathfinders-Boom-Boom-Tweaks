@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AutoCannons_300" />
+            <Icon>Textures\GUI\300mm_AutoCannon.dds</Icon>
+            <DisplayName>300mm Cannons</DisplayName>
+            <Description>This weapongroup contains all the 300mm Autocannons.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_1_300" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_2_300" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_3_300" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_1_300_small" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_2_300_small" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_3_300_small" />
+            </Blocks>
+        </BlockVariantGroup>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AutoCannons_900" />
+            <Icon>Textures\GUI\900mm_AutoCannon.dds</Icon>
+            <DisplayName>900mm Cannons</DisplayName>
+            <Description>This weapongroup contains all the 900mm Autocannons.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_1_900" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_2_900" />
+				<Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="AutoCannon_3_900" />
+            </Blocks>
+        </BlockVariantGroup>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="SideCannons" />
+            <Icon>Textures\GUI\SideCannon.dds</Icon>
+            <DisplayName>Side Cannons</DisplayName>
+            <Description>This weapongroup contains all the Broadsiding cannons.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="Side300Cannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="Side300Cannonsmall" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="Side900Cannon" />
+            </Blocks>
+        </BlockVariantGroup>
+
+    </BlockVariantGroups>
+</Definitions>

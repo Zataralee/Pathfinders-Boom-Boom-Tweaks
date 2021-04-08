@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+
+      <!-- =============================================================================================================== -->
+      <!-- NARIMAN PDC 70mm -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>nariman</SubtypeId>
+      </Id>
+      <DisplayName>PDC LGC-200 NARIMAN</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\nariman.png</Icon>
+      <Description>L.Y.N.X Military Division presets - Naiman. The one and only PDC solution you will ever need! With it's quick actuaction mechanism and superior fire rates it will save you in the most tricky of situations! Uses: Nariman 70mm</Description>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\nariman\MissileTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="85" />
+		<Component Subtype="SuperComputer" Count="70" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SmallTube" Count="6" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+      </MountPoints>
+
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\nariman\MissileTurret_BS1.mwm"/>
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\nariman\MissileTurret_BS2.mwm"/>
+      </BuildProgressModels>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>nariman</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="nariman_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-58</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+      <!-- =============================================================================================================== -->
+      <!-- AVENGER GATLING CANNON 110mm -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeGatlingTurret</TypeId>
+        <SubtypeId>avengerGatling1</SubtypeId>
+      </Id>
+      <DisplayName>Heavy PDC HGC-185 AVENGER</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\avengerGatling1.png</Icon>
+      <Description>L.Y.N.X Military Division presets a collaboration with the Tech division that brings you this. Combining advanced technology and military might, this might be the biggest and the baddest rotary cannon on the market! Boasting 185mm of raw high speed firepower, this PDC will blast through enemy hulls equally to incoming missiles. Uses: Autocannon 185mm</Description>
+      <CubeSize>Large</CubeSize>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\avengerGatling1\GatlingTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="520" />
+		<Component Subtype="SuperComputer" Count="185" />
+        <Component Subtype="Construction" Count="345" />
+        <Component Subtype="MetalGrid" Count="115" />
+        <Component Subtype="SmallTube" Count="260" />
+        <Component Subtype="Motor" Count="45" />
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="LargeTube" Count="32" />
+        <Component Subtype="Computer" Count="55" />
+        <Component Subtype="Construction" Count="100" />
+        <Component Subtype="SteelPlate" Count="220" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.75" StartY="0.0" EndX="2.25" EndY="3.0"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\avengerGatling1\GatlingTurret_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\avengerGatling1\GatlingTurret_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\avengerGatling1\GatlingTurret_BS3.mwm"/>
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>avengerGatling1</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="avengerGatling_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-43</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>225</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+      <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+      <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+      <!-- =============================================================================================================== -->
+      <!-- HERMES RAILGUN  -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>hermesRail1</SubtypeId>
+      </Id>
+      <DisplayName>Railgun Turret RT-200 HERMES</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\hermesRail1.png</Icon>
+      <Description>L.Y.N.X Industries presents - Semi-Long range railgun turret! Utilizing high-end actuaction technology, this turret is able to move so fast, your foes will be scared miles away! Uses: Railgun 265mm</Description>
+      <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="5"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\hermesRail1\MissileTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="225" />
+		<Component Subtype="SuperComputer" Count="250" />
+        <Component Subtype="Construction" Count="135" />
+        <Component Subtype="MetalGrid" Count="85" />
+        <Component Subtype="LargeTube" Count="28" />
+        <Component Subtype="Motor" Count="22" />
+        <Component Subtype="Superconductor" Count="80" />
+        <Component Subtype="Computer" Count="75" />
+        <Component Subtype="Construction" Count="80" />
+        <Component Subtype="SteelPlate" Count="110" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="5.0"/>
+            </MountPoints>
+
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\hermesRail1\MissileTurret_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\hermesRail1\MissileTurret_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\hermesRail1\MissileTurret_BS3.mwm"/>
+      </BuildProgressModels>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>hermesRail1</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="hermesRail1_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-58</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+
+      <!-- =============================================================================================================== -->
+      <!-- EVO RAILGUN -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>twinrail</SubtypeId>
+      </Id>
+      <DisplayName>Railgun Turret RT-500 EVO</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\twinrail.png</Icon>
+      <Description>L.Y.N.X Industries presents - Absolute titan of a railgun! Your foes will cease to exist by just knowing you have this! Uses: Railgun 265mm</Description>
+      <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="5"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\twinrail\MissileTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+		<Component Subtype="SuperComputer" Count="200" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="LargeTube" Count="60" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Superconductor" Count="455" />
+        <Component Subtype="Computer" Count="120" />
+        <Component Subtype="Construction" Count="100" />
+        <Component Subtype="SteelPlate" Count="250" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="5.0"/>
+      </MountPoints>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>twinrail</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="twinrail_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-58</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+
+      <!-- =============================================================================================================== -->
+      <!-- THOR FLAK CANNON 635mm -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>thor_cannon_01</SubtypeId>
+      </Id>
+      <DisplayName>HFC-635 THOR Heavy Flak Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thor_cannon_01.png</Icon>
+      <Description>L.Y.N.X Industries presents - Heavy Defence flak cannon! Take your security to the next level with the latest technology from L.Y.N.X! Uses: Flak 635mm</Description>
+      <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="4" z="5"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\thor_cannon_01\thor_cannon_01.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2200" />
+		<Component Subtype="SuperComputer" Count="350" />
+        <Component Subtype="Construction" Count="820" />
+        <Component Subtype="MetalGrid" Count="285" />
+        <Component Subtype="LargeTube" Count="58" />
+        <Component Subtype="Motor" Count="55" />
+        <Component Subtype="Superconductor" Count="666" />
+        <Component Subtype="Computer" Count="52" />
+        <Component Subtype="Construction" Count="135" />
+        <Component Subtype="SteelPlate" Count="280" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="5.0"/>
+      </MountPoints>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>thor_cannon_01</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="thor_01_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-35</MinElevationDegrees>
+      <MaxElevationDegrees>50</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>7800</MaxRangeMeters>
+      <RotationSpeed>0.0002</RotationSpeed>
+      <ElevationSpeed>0.0002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+
+      <!-- =============================================================================================================== -->
+      <!-- ODIN FLAK CANNON 720mm -->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>odin</SubtypeId>
+      </Id>
+      <DisplayName>HFC-800 ODIN Heavy Flak Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\odin.png</Icon>
+      <Description>L.Y.N.X Industries presents - Heavy Defence Flak Cannon! Take your security to the next level with the latest technology from L.Y.N.X! Uses: Flak 635mm</Description>
+      <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="7" y="5" z="7"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\odin\MissileTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3800" />
+		<Component Subtype="SuperComputer" Count="500" />
+        <Component Subtype="Construction" Count="1250" />
+        <Component Subtype="MetalGrid" Count="550" />
+        <Component Subtype="LargeTube" Count="82" />
+        <Component Subtype="Motor" Count="82" />
+        <Component Subtype="Superconductor" Count="666" />
+        <Component Subtype="Computer" Count="332" />
+        <Component Subtype="Construction" Count="360" />
+        <Component Subtype="SteelPlate" Count="550" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="7.0" EndY="7.0"/>
+			</MountPoints>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>odin</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="odin_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-35</MinElevationDegrees>
+      <MaxElevationDegrees>50</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>7800</MaxRangeMeters>
+      <RotationSpeed>0.0002</RotationSpeed>
+      <ElevationSpeed>0.0002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+
+      <!-- =============================================================================================================== -->
+      <!-- STALLION RAILGUN 35mm -->
+
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>stallionRail</SubtypeId>
+      </Id>
+      <DisplayName>Railgun Turret RTP-250 STALLION</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stallionRail.png</Icon>
+      <Description>L.Y.N.X Industries presents - Semi-Long range railgun turret! Utilizing high-end actuaction technology, this turret is able to move so fast, your foes will be scared miles away! Uses: Railgun 35mm</Description>
+      <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <PlaceDecals>false</PlaceDecals>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\stallionRail\MissileTurret.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+		<Component Subtype="SuperComputer" Count="150" />
+        <Component Subtype="Construction" Count="45" />
+        <Component Subtype="MetalGrid" Count="12" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Motor" Count="16" />
+        <Component Subtype="Superconductor" Count="65" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+      </MountPoints>
+
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>stallionRail</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="stallionRail_def" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-58</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>true</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>275</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+        <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+        <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+        <TieredUpdateTimes>
+            <unsignedInt>10</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+    </Definition>
+
+
+	</CubeBlocks>
+</Definitions>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>nariman70</SubtypeId>
+      </Id>
+      <DisplayName>Nariman 70mm</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\narimanMag.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>20</Mass>
+      <Volume>25</Volume>
+      <Model>Models\Items\Components\narimanMag.mwm</Model>
+      <Capacity>400</Capacity>
+      <AmmoDefinitionId Subtype="nariman70round" />
+    </AmmoMagazine>
+
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>autocannon185</SubtypeId>
+      </Id>
+      <DisplayName>Autocannon 185mm</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\autocannon185.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>680</Mass>
+      <Volume>100</Volume>
+      <Model>Models\Items\Components\autocannon185.mwm</Model>
+      <Capacity>400</Capacity>
+      <AmmoDefinitionId Subtype="autocannon185round" />
+    </AmmoMagazine>
+
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>railgun265</SubtypeId>
+      </Id>
+      <DisplayName>Railgun 265mm</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\railgun265.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>13</Mass>
+      <Volume>10</Volume>
+      <Model>Models\Items\Components\railgun265.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="railgun265round" />
+    </AmmoMagazine>
+
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>flak635ammo</SubtypeId>
+      </Id>
+      <DisplayName>Flak 635mm</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\flak635.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>120</Mass>
+      <Volume>25</Volume>
+      <Model>Models\Items\Components\flak635.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="flak635round" />
+    </AmmoMagazine>
+
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>railgun35</SubtypeId>
+      </Id>
+      <DisplayName>Railgun 35mm</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\railgun35.png</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.6</Mass>
+      <Volume>1</Volume>
+      <Model>Models\Items\Components\railgun35.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="railgun35round" />
+    </AmmoMagazine>
+
+
+    </AmmoMagazines>
+</Definitions>

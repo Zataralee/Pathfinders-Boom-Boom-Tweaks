@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Sounds>
+
+<!-- ============================================================================================= -->
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcAvengerShotMuffled</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <Volume>0.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotMuffled1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotMuffled2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotMuffled3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcAvengerShotNormal</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>300</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="230" Sound="ArcAvengerShotMuffled" />
+      </DistantSounds>
+      <Volume>0.8</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotNormal1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotNormal2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\avenger\ArcAvengerShotNormal3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+<!-- ============================================================================================= -->
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcHermesShotMuffled</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>1000</MaxDistance>
+      <Volume>0.8</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotMuffled1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotMuffled2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotMuffled3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcHermesShotNormal</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>300</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="230" Sound="ArcHermesShotMuffled" />
+      </DistantSounds>
+      <Volume>1.1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotNormal1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotNormal2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\hermes\ArcHermesShotNormal3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+<!-- ============================================================================================= -->
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcThorFireVacuum</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>2100</MaxDistance>
+      <Volume>2.1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_vacuum_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_vacuum_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_vacuum_1.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcThorFireNormal</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>400</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="500" Sound="ArcThorFireVacuum" />
+      </DistantSounds>
+      <Volume>2.8</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_normal_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_normal_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\thor\ArcThorFire_normal_1.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+<!-- ============================================================================================= -->
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcNarimanShotMuffled</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <Volume>0.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotMuffled1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotMuffled2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotMuffled3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcNarimanShotNormal</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>300</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="230" Sound="ArcNarimanShotMuffled" />
+      </DistantSounds>
+      <Volume>0.8</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotNormal1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotNormal2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\nariman\ArcNarimanShotNormal3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+<!-- ============================================================================================= -->
+
+
+  </Sounds>
+</Definitions>

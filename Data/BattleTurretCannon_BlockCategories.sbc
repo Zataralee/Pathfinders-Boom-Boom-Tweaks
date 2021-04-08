@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+    	<Id>
+    		<TypeId>GuiBlockCategoryDefinition</TypeId>
+        	<SubtypeId/>
+      	</Id>
+        <DisplayName>BCAT</DisplayName>
+        <Name>BCAT WeaponCore</Name>
+      	<ItemIds>
+			<!-- Turret Cannons -->
+			<string>LargeMissileTurret/AutoCannon_1_300</string>
+			<string>LargeMissileTurret/AutoCannon_1_900</string>
+			<string>LargeMissileTurret/Side300Cannon</string>
+
+			
+			<!-- Defense Turrets -->
+			<string>LargeGatlingTurret/LargeVulcan</string>
+			<string>LargeGatlingTurret/MiniVulcan</string>
+			<string>LargeGatlingTurret/SmallSentryGun</string>
+			<string>LargeGatlingTurret/SmallSentryGatling</string>
+			<string>LargeMissileTurret/40mmBofors</string>
+			<string>LargeGatlingTurret/LargeAden</string>
+
+			<!-- Static Cannons -->
+			<string>SmallMissileLauncher/LittleDavid</string>
+			<string>SmallGatlingGun/VulcanGun</string>
+	  	</ItemIds>
+    </Category>
+	
+	<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+	  	<Id>
+			<TypeId>GuiBlockCategoryDefinition</TypeId>
+			<SubtypeId/>
+	 	 </Id>
+		<DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+		<Name>Weapons</Name>
+	 	<ItemIds>
+			<!-- Turret Cannons -->
+			<string>LargeMissileTurret/AutoCannon_1_300</string>
+			<string>LargeMissileTurret/AutoCannon_1_900</string>
+			<string>LargeMissileTurret/Side300Cannon</string>
+			
+			<!-- Defense Turrets -->
+			<string>LargeGatlingTurret/LargeVulcan</string>
+			<string>LargeGatlingTurret/MiniVulcan</string>
+			<string>LargeGatlingTurret/SmallSentryGun</string>
+			<string>LargeGatlingTurret/SmallSentryGatling</string>
+			<string>LargeMissileTurret/40mmBofors</string>
+			<string>LargeGatlingTurret/LargeAden</string>
+
+			<!-- Static Cannons -->
+			<string>SmallMissileLauncher/LittleDavid</string>
+			<string>SmallGatlingGun/VulcanGun</string>	
+	  	</ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

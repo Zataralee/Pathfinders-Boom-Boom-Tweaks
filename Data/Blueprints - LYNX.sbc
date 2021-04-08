@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>nariman70box</SubtypeId>
+      </Id>
+      <DisplayName>Nariman 70mm Ammo Box</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\narimanMag.png</Icon>
+
+      <Prerequisites>
+        <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="6" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="nariman70" />
+
+      <BaseProductionTimeInSeconds>0.05</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>autocannon185box</SubtypeId>
+      </Id>
+      <DisplayName>Autocannon 185mm AP Box</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\autocannon185.png</Icon>
+
+      <Prerequisites>
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="autocannon185" />
+
+      <BaseProductionTimeInSeconds>0.05</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>railgun265projectile</SubtypeId>
+      </Id>
+      <DisplayName>Railgun 265mm Projectile</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\railgun265.png</Icon>
+
+      <Prerequisites>
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="9" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Zidium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="railgun265" />
+
+      <BaseProductionTimeInSeconds>0.05</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>flak635</SubtypeId>
+      </Id>
+      <DisplayName>Flak Cannon 635mm Shell</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\flak635.png</Icon>
+
+      <Prerequisites>
+        <Item Amount="90" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="flak635ammo" />
+
+      <BaseProductionTimeInSeconds>0.05</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>railgun35projectile</SubtypeId>
+      </Id>
+      <DisplayName>Railgun 35mm Projectile</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\railgun35.png</Icon>
+
+      <Prerequisites>
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="6" TypeId="Ingot" SubtypeId="Naonite" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="railgun35" />
+
+      <BaseProductionTimeInSeconds>0.05</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    
+
+  </Blueprints>
+</Definitions>

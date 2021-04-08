@@ -1,0 +1,582 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>MXA_CoilgunH</SubtypeId>
+			</Id>
+			<DisplayName>Mark 40 Spitfire</DisplayName>
+			<Description>The Spitfire naval coilgun battery is a ship-to-ship weapon utilised by the UNSC Navy during and after the Human-Covenant War.
+			
+			Engagement Range: 7k 
+			Ammo: 305mm Coilgun Rounds
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_CoilGunH.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="3"/>
+			<ModelOffset x="0" y="1.25" z="0"/>
+			<Model>Models\Coilguns\MXA_Spitfire.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="200" />
+
+             <Component Subtype="Construction" Count="50" />
+             <Component Subtype="MetalGrid" Count="30" />
+             <Component Subtype="LargeTube" Count="2" />
+             <Component Subtype="Motor" Count="15" />
+	         <Component Subtype="Superconductor" Count="60" />	
+			 <Component Subtype="PowerCell" Count="320" />
+             <Component Subtype="Computer" Count="40" />
+             <Component Subtype="SteelPlate" Count="250" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunH" />
+			<InventoryMaxVolume>4.0</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>60</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>500</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3" EndY="3"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Spitfire_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Spitfire_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Spitfire_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_CoilgunH</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>MXA_CoilgunL</SubtypeId>
+			</Id>
+			<DisplayName>M66 Sentry</DisplayName>
+			<Description>The Sentry autocannon is a line of naval coilguns used by the UNSC Navy during and after the Human-Covenant War.
+			
+			Engagement Range: 5k 
+			Ammo: 155mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_CoilgunL.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="3"/>
+			<ModelOffset x="0" y="1.25" z="0"/>
+			<Model>Models\Coilguns\MXA_Sentry.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="100" />
+
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="15" />
+             <Component Subtype="LargeTube" Count="2" />
+             <Component Subtype="Motor" Count="10" />
+	         <Component Subtype="Superconductor" Count="20" />
+			 <Component Subtype="PowerCell" Count="160" />
+             <Component Subtype="Computer" Count="30" />
+             <Component Subtype="SteelPlate" Count="125" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunL" />
+			<InventoryMaxVolume>4.0</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>45</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>350</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Sentry_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Sentry_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Sentry_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_CoilgunL</BlockPairName>
+		</Definition>
+		<!--
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_CoilgunL_S</SubtypeId>
+			</Id>
+			<DisplayName>M66 Sentry</DisplayName>
+			<Description>The Sentry autocannon is a line of naval coilguns used by the UNSC Navy during and after the Human-Covenant War.
+			
+			Engagement Range: 2.5k 
+			Ammo: 155mm Ammo Crates
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_CoilgunL.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="15" y="10" z="15"/>
+			<ModelOffset x="0" y="1.25" z="0"/>
+			<Model>Models\Coilguns\MXA_Sentry.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="100" />
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="15" />
+             <Component Subtype="LargeTube" Count="2" />
+             <Component Subtype="Motor" Count="10" />
+	         <Component Subtype="Superconductor" Count="20" />
+			 <Component Subtype="PowerCell" Count="160" />
+             <Component Subtype="Computer" Count="30" />
+             <Component Subtype="SteelPlate" Count="125" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunL" />
+			<InventoryMaxVolume>4.0</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>45</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>350</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5" EndY="5"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Sentry_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Sentry_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Sentry_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_CoilgunL</BlockPairName>
+		</Definition>
+		-->
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_CoilgunPD</SubtypeId>
+			</Id>
+			<DisplayName>M910 Rampart</DisplayName>
+			<Description>The M910 Rampart point defense network is a point defense system utilized by the UNSC Navy on its warships. They are primarily used to shoot down fighters and missiles.
+			
+			Engagement Range: 1.5k 
+			Ammo: 50mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_CoilgunPD.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<GuiVisible>true</GuiVisible>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Rampart.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="50" />
+
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="10" />
+             <Component Subtype="LargeTube" Count="2" />
+             <Component Subtype="Motor" Count="5" />
+	         <Component Subtype="Superconductor" Count="10" />	
+			 <Component Subtype="PowerCell" Count="80" />	
+             <Component Subtype="Computer" Count="30" />
+             <Component Subtype="SteelPlate" Count="75" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunPD" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>200</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1" EndY="1"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Rampart_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Rampart_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Rampart_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_CoilgunPD</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_CoilgunPD_S</SubtypeId>
+			</Id>
+			<DisplayName>M910 Rampart</DisplayName>
+			<Description>The M910 Rampart point defense network is a point defense system utilized by the UNSC Navy on its warships. They are primarily used to shoot down fighters and missiles.
+			
+			Engagement Range: 1.5k 
+			Ammo: 50mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_CoilgunPD.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<GuiVisible>true</GuiVisible>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="5" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Rampart_S.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="50" />
+
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="10" />
+             <Component Subtype="LargeTube" Count="2" />
+             <Component Subtype="Motor" Count="5" />
+	         <Component Subtype="Superconductor" Count="10" />	
+			 <Component Subtype="PowerCell" Count="80" />	
+             <Component Subtype="Computer" Count="30" />
+             <Component Subtype="SteelPlate" Count="75" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunPD" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>200</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5" EndY="5"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Rampart_S_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Rampart_S_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Rampart_S_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_CoilgunPD</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_Rampart2</SubtypeId>
+			</Id>
+			<DisplayName>M870 Rampart</DisplayName>
+			<Description>The M870 Rampart point defense network is a point defense system utilized by the UNSC Navy on its warships. They are primarily used to shoot down fighters and missiles.
+			
+			Engagement Range: 1.25k 
+			Ammo: 50mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_Rampart2.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<GuiVisible>true</GuiVisible>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Rampart2.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="25" />
+
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="10" />
+             <Component Subtype="LargeTube" Count="4" />
+             <Component Subtype="Motor" Count="5" />
+	         <Component Subtype="Superconductor" Count="10" />	
+			 <Component Subtype="PowerCell" Count="80" />	
+             <Component Subtype="Computer" Count="40" />
+             <Component Subtype="SteelPlate" Count="50" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_Rampart2" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>250</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1" EndY="1"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Rampart2_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Rampart2_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Rampart2_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_Rampart2</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_Rampart2_S</SubtypeId>
+			</Id>
+			<DisplayName>M870 Rampart</DisplayName>
+			<Description>The M870 Rampart point defense network is a point defense system utilized by the UNSC Navy on its warships. They are primarily used to shoot down fighters and missiles.
+			
+			Engagement Range: 1.25k 
+			Ammo: 50mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_Rampart2_S.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<GuiVisible>true</GuiVisible>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Rampart2_S.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="25" />
+
+             <Component Subtype="Construction" Count="25" />
+             <Component Subtype="MetalGrid" Count="10" />
+             <Component Subtype="LargeTube" Count="4" />
+             <Component Subtype="Motor" Count="5" />
+	         <Component Subtype="Superconductor" Count="10" />	
+			 <Component Subtype="PowerCell" Count="80" />	
+             <Component Subtype="Computer" Count="40" />
+             <Component Subtype="SteelPlate" Count="50" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_Rampart2" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>250</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5" EndY="5"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Rampart2_S_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Rampart2_S_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Rampart2_S_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_Rampart2</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_BreakWater</SubtypeId>
+			</Id>
+			<DisplayName>Mark  15 Breakwater</DisplayName>
+			<Description>The Mark 15 Breakwater naval coilgun is a heavy ship-to-ship turret created for the UNSC Navy.
+			
+			Engagement Range: 8k 
+			Ammo: 520mm Coilgun Rounds
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_BreakWater.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<ModelOffset x="0" y="1.25" z="-2.5"/>
+			<Model>Models\Coilguns\MXA_BreakWater.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="400" />
+			 <Component Subtype="SuperComputer" Count="100" />
+             <Component Subtype="Construction" Count="100" />
+             <Component Subtype="MetalGrid" Count="75" />
+             <Component Subtype="LargeTube" Count="6" />
+             <Component Subtype="Motor" Count="30" />
+	         <Component Subtype="Superconductor" Count="120" />	
+			 <Component Subtype="PowerCell" Count="450" />
+             <Component Subtype="Computer" Count="60" />
+             <Component Subtype="SteelPlate" Count="500" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunH" />
+			<InventoryMaxVolume>4.0</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>60</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>750</PCU>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1.45" StartY="2.45" EndX="3.55" EndY="4.55" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_BreakWater_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_BreakWater_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_BreakWater_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_BreakWater</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>MXA_Sabre_Coilgun</SubtypeId>
+			</Id>
+			<DisplayName>M1024 ASW/AC 30mm</DisplayName>
+			<Description>The machine-linked autocannon (MLA) is a classification of coilgun mounted as turrets on various space fighters in service with the UNSC.
+			
+			Ammo: 30mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_Sabre_Coilgun.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="4"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Sabre_Coilgun.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="25" />
+			 <Component Subtype="SuperComputer" Count="100" />
+             <Component Subtype="Construction" Count="10" />
+             <Component Subtype="MetalGrid" Count="5" />
+             <Component Subtype="LargeTube" Count="1" />
+             <Component Subtype="Motor" Count="1" />
+	         <Component Subtype="Superconductor" Count="5" />	
+			 <Component Subtype="PowerCell" Count="40" />	
+             <Component Subtype="Computer" Count="5" />
+             <Component Subtype="SteelPlate" Count="50" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunPD" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>100</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" Default="true" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Left" StartX="3.0" StartY="0.0" EndX="4.0" EndY="1" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="3.0" EndX="1.0" EndY="4.0" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_Sabre_Coilgun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_Sabre_Coilgun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Sabre_Coilgun_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_Sabre_Coilgun</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>MXA_Sabre_E_Coilgun</SubtypeId>
+			</Id>
+			<DisplayName>M1024 ASW/AC 30mm(Encased)</DisplayName>
+			<Description>The machine-linked autocannon (MLA) is a classification of coilgun mounted as turrets on various space fighters in service with the UNSC.
+			
+			Ammo: 30mm Coilgun Ammo Containers
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_Sabre_E_Coilgun.png</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="4"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_Sabre_E_Coilgun.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="50" />
+			 <Component Subtype="SuperComputer" Count="50" />
+             <Component Subtype="Construction" Count="10" />
+             <Component Subtype="MetalGrid" Count="5" />
+             <Component Subtype="LargeTube" Count="1" />
+             <Component Subtype="Motor" Count="1" />
+	         <Component Subtype="Superconductor" Count="5" />	
+			 <Component Subtype="PowerCell" Count="40" />	
+             <Component Subtype="Computer" Count="5" />
+             <Component Subtype="SteelPlate" Count="100" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunPD" />
+			<InventoryMaxVolume>0.250</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>100</PCU>
+            <IsAirTight>false</IsAirTight> 
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" Default="true" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="4.0" EndY="1" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="3.0" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="1.0" EndY="4.0" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.5" File="Models\Coilguns\MXA_Sabre_E_Coilgun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_Sabre_E_Coilgun_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_Sabre_E_Coilgun</BlockPairName>
+		</Definition>
+		
+	</CubeBlocks>
+</Definitions>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>  
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_SMAC_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>1500mm MAC Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_SMAC_Ammo.png</Icon>
+	  
+      <Prerequisites>
+		<Item Amount="1" TypeId="Ingot" SubtypeId="Obsidian" />	  
+		<Item Amount="3500" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="575" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_SMAC_Ammo" />
+      <BaseProductionTimeInSeconds>200</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	  
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_MACL_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>1000mm MAC Round x 3</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_MACL_Ammo.png</Icon>
+	  
+      <Prerequisites>
+		<Item Amount="1" TypeId="Ingot" SubtypeId="Obsidian" />	  	  
+        <Item Amount="6750" TypeId="Ingot" SubtypeId="Iron" /> <!--2250 per Round-->
+        <Item Amount="1125" TypeId="Ingot" SubtypeId="Nickel" /> <!--375 per Round-->
+        <Item Amount="60" TypeId="Ingot" SubtypeId="Uranium" /> <!--225 per Round-->
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_MACL_Ammo" />
+      <BaseProductionTimeInSeconds>405</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MXA_MACL_S_Ammo</SubtypeId>
+      </Id>
+      <DisplayName>600mm MAC Round</DisplayName>
+      <Icon>Textures\GUI\Icons\MXA_MACL_S_Ammo.png</Icon>
+	  
+      <Prerequisites>
+		<Item Amount="1" TypeId="Ingot" SubtypeId="Obsidian" />	  	  
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="250" TypeId="Ingot" SubtypeId="Nickel" />
+		<Item Amount="15" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_MACL_S_Ammo" />
+      <BaseProductionTimeInSeconds>90</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+  </Blueprints>
+  
+  <BlueprintClassEntries>
+   
+		<Entry Class="Components" BlueprintSubtypeId="MXA_MACL_S_Ammo" />	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_MACL_Ammo" />	
+		<Entry Class="Components" BlueprintSubtypeId="MXA_SMAC_Ammo" />	
+		
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_MACL_S_Ammo" />
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_MACL_Ammo" />	
+		<Entry Class="Ammo" BlueprintSubtypeId="MXA_SMAC_Ammo" />
+	
+  </BlueprintClassEntries>
+</Definitions>

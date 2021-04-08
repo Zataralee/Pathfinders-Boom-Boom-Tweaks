@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ResearchBlocks>
+  
+	<!-- COILGUN PROGRESS -->
+  
+    <ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunH" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_Coilgun</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunL" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_CoilgunPD" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Rampart2" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_Coilgun</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_Coilgun" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_E_Coilgun" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_BreakWater" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_H_Coilgun</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	
+	<!-- MAC PROGRESS -->
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M2MAC" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_Coilgun</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_MAC2</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL_S" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_MAC2</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SMAC" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_MAC</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+
+	<!-- MISSILE PROGRESS -->
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M58ArcherPods" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_ArcherPods" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Shiva" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_Missile</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+
+  </ResearchBlocks>	
+</Definitions>

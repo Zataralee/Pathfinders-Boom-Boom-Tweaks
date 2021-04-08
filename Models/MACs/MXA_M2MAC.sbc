@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>MXA_M2MAC</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_MXA_M2MAC</DisplayName>
+			<Description>Description_MXA_M2MAC</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="7"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\MACs\MXA_M2MAC.mwm</Model>
+			<Components>
+				<Component Count="10" Subtype="SteelPlate"/>
+			</Components>
+			<CriticalComponent Index="0" Subtype="SteelPlate"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="6.7" StartY="0.27" EndX="7.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="7" EndY="0.27"/>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.27" EndX="1.3" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="6.0" EndY="0.27"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.27" EndX="0.3" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="5.7" StartY="0.27" EndX="6.0" EndY="1.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="5.7" EndX="1.0" EndY="6.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="0.3"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="1.0" EndY="7"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\MACs\MXA_M2MAC_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\MACs\MXA_M2MAC_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\MACs\MXA_M2MAC_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_M2MAC</BlockPairName>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

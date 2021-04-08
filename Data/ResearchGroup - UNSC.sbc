@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ResearchGroups>
+  
+    <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_Coilgun" />
+      <Members>
+		<BlockId Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunL" />
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_CoilgunPD" />
+      </Members>
+    </ResearchGroup>
+	
+	 <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_Coilgun_MLA" />
+      <Members>
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_Coilgun" />
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Sabre_E_Coilgun" />
+      </Members>
+    </ResearchGroup>
+	
+	<ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_H_Coilgun" />
+      <Members>
+		<BlockId Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunH" />
+      </Members>
+    </ResearchGroup>
+	
+	<ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_SH_Coilgun" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_BreakWater" />
+      </Members>
+    </ResearchGroup>
+	
+	<!-- MAC Research Groups -->
+	 <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_MAC2" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M2MAC" />
+      </Members>
+    </ResearchGroup>
+	 
+	 <ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_MAC" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL" />
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_MACL_S" />
+      </Members>
+    </ResearchGroup>
+	
+	<ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_SMAC" />
+      <Members>
+        <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SMAC" />
+      </Members>
+    </ResearchGroup>
+	
+	<!-- Missile Research Groups -->
+	<ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_Missile" />
+      <Members>
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_ArcherPods" />
+        <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M58ArcherPods" />
+      </Members>
+    </ResearchGroup>
+
+  </ResearchGroups>
+</Definitions>
