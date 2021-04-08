@@ -19,7 +19,7 @@ namespace WeaponThread
             AmmoRound = "flak635round",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.35f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 700f,
+            BaseDamage = 650f,
             Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000f,
@@ -115,7 +115,7 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = true,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 60000,
+                    DetonationDamage = 55000,
                     DetonationRadius = 7,
                 },
                 EwarFields = new EwarFieldsDef
