@@ -86,7 +86,7 @@ namespace WeaponThread {
                     //Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
-                    GridWeaponCap = 0,
+                    GridWeaponCap = 1,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 0,
                     MuzzleCheck = false,
