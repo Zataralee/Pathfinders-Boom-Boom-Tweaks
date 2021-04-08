@@ -1294,7 +1294,7 @@ namespace WeaponThread
             AmmoRound = "BoforsAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 50f,
+            BaseDamage = 100f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 400f,
@@ -1349,9 +1349,9 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = 1f,
-                    Light = 1f,
-                    Heavy = 3f,
-                    NonArmor = 3f,
+                    Light = 5f,
+                    Heavy = 1f,
+                    NonArmor = 1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -1457,7 +1457,7 @@ namespace WeaponThread
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                AccelPerSec = 0f,
+                AccelPerSec = 25f,
                 DesiredSpeed = 700,
                 MaxTrajectory = 1500f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
