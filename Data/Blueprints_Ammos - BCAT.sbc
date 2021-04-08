@@ -29,7 +29,7 @@
       <Prerequisites>
         <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="75" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="30" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="300mmShell_HE" />
       <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
@@ -45,7 +45,7 @@
       <Prerequisites>
         <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="75" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="30" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
 		<Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="300mmShell_AP" />
@@ -62,7 +62,7 @@
       <Prerequisites>
         <Item Amount="900" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="225" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="60" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="6" TypeId="Ingot" SubtypeId="Obsidian" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="900mmShell_HE" />
       <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
@@ -78,7 +78,7 @@
       <Prerequisites>
         <Item Amount="900" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="225" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="60" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="6" TypeId="Ingot" SubtypeId="Obsidian" />
 		<Item Amount="3" TypeId="Ingot" SubtypeId="Uranium" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="900mmShell_AP" />
@@ -113,7 +113,7 @@
         <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="3" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="12" TypeId="Ingot" SubtypeId="Naonite" />
+		<Item Amount="4" TypeId="Ingot" SubtypeId="Naonite" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Aden30x113" />
       <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
@@ -129,7 +129,7 @@
       <Prerequisites>
         <Item Amount="600" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="255" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="12" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="LittleDavidMag" />
       <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
