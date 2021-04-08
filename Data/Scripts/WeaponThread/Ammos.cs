@@ -1922,7 +1922,7 @@ namespace WeaponThread
             AmmoRound = "VulcanAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 200f,
+            BaseDamage = 150f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 7f,
@@ -1979,11 +1979,11 @@ namespace WeaponThread
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1f,
+                    NonArmor = .50f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1.5f,
+                    Modifier = .25f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
