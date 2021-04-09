@@ -34,7 +34,7 @@
         <Y>0.2</Y>
         <Z>0.2</Z>
       </Size>
-      <Mass>680</Mass>
+      <Mass>30</Mass>
       <Volume>100</Volume>
       <Model>Models\Items\Components\autocannon185.mwm</Model>
       <Capacity>400</Capacity>
