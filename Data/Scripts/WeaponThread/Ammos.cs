@@ -2606,14 +2606,14 @@ namespace WeaponThread
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = -1f,
-                    Heavy = 5f,
-                    NonArmor = -1f,
+                    Armor = 1f,
+                    Light = 1f,
+                    Heavy = 3f,
+                    NonArmor = 1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 5f,
+                    Modifier = 1f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
@@ -2682,7 +2682,7 @@ namespace WeaponThread
                     DetonateOnEnd = false,
                     ArmOnlyOnHit = false,
                     DetonationDamage = 10000,
-                    DetonationRadius = 2f,
+                    DetonationRadius = 3f,
                     MinArmingTime = 0, //Min time in ticks before projectile will arm for detonation (will also affect shrapnel spawning)
                 },
                 EwarFields = new EwarFieldsDef
@@ -2920,14 +2920,14 @@ namespace WeaponThread
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
-                    NonArmor = -1f,
+                    Armor = 1f,
+                    Light = 1f,
+                    Heavy = 1f,
+                    NonArmor = 1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 5f,
+                    Modifier = 0f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
