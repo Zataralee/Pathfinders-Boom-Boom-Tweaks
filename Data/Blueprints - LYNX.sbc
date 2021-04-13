@@ -14,7 +14,7 @@
         <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="30" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="6" TypeId="Ingot" SubtypeId="Magnesium" />
-		<Item Amount="6" TypeId="Ingot" SubtypeId="Obsidian" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="nariman70" />
 
@@ -36,8 +36,7 @@
         <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="6" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Obsidian" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Obsidian" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="autocannon185" />
 
@@ -102,7 +101,7 @@
         <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="0.3" TypeId="Ingot" SubtypeId="Platinum" />
-		<Item Amount="6" TypeId="Ingot" SubtypeId="Naonite" />
+		<Item Amount="3" TypeId="Ingot" SubtypeId="Naonite" />
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="railgun35" />
 
