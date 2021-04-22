@@ -19,7 +19,7 @@
         
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_ArcherPods_Ammo" />
-      <BaseProductionTimeInSeconds>180.0</BaseProductionTimeInSeconds>
+      <BaseProductionTimeInSeconds>50.0</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
 	
@@ -40,7 +40,7 @@
         
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_M58ArcherPods_Ammo" />
-      <BaseProductionTimeInSeconds>90.0</BaseProductionTimeInSeconds>
+      <BaseProductionTimeInSeconds>35.0</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
 	
@@ -62,7 +62,7 @@
         
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Shiva_Ammo" />
-      <BaseProductionTimeInSeconds>240.0</BaseProductionTimeInSeconds>
+      <BaseProductionTimeInSeconds>100.0</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
 	
