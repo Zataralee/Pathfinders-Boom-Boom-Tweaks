@@ -24,7 +24,7 @@
 			<MirroringY>Z</MirroringY>
 		    <MirroringZ>Y</MirroringZ>
 			<Components>
-			 <Component Subtype="StandardModulator" Count="1" />
+			 <Component Subtype="StandardModulator" Count="1">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
@@ -96,7 +96,7 @@
 			<MirroringY>Z</MirroringY>
 		    <MirroringZ>Y</MirroringZ>
 			<Components>
-			 <Component Subtype="StandardModulator" Count="1" />
+			 <Component Subtype="StandardModulator" Count="1">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
@@ -169,7 +169,7 @@
 			<MirroringY>Z</MirroringY>
 		    <MirroringZ>Y</MirroringZ>
 			<Components>
-				<Component Subtype="StandardModulator" Count="1" />
+				<Component Subtype="StandardModulator" Count="1">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
