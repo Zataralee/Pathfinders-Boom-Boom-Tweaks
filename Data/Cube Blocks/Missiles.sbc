@@ -204,6 +204,7 @@
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
+				 </Component>
 				<Component Subtype="SteelPlate" Count="100" />
 				 <Component Subtype="SuperComputer" Count="500" />
 				<Component Subtype="Construction" Count="200" />
