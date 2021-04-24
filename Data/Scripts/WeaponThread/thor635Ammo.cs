@@ -115,7 +115,7 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = true,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 50000,
+                    DetonationDamage = 10000, // Was 50000. Changed by Zat 4-21-21 to 10000. This stacks. 
                     DetonationRadius = 7,
                 },
                 EwarFields = new EwarFieldsDef
