@@ -127,7 +127,7 @@ namespace WeaponThread {
                 Graphics = new HardPointParticleDef {
 
                     Barrel1 = new ParticleDef {
-                        Name = "MXA_MACMuzzleFlash", // Smoke_LargeGunShot
+                        Name = "MXA_MACMuzzleFlash", // MXA_MACMuzzleFlash
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
@@ -158,7 +158,7 @@ namespace WeaponThread {
                 MXA_MACL_Ammo,
 				MXA_MACL_Shrapnel,
 				MXA_MACL_HPAmmo,
-				//MXA_MACL_Impact,
+				MXA_MACL_Impact,
 				//MXA_MACL_HPAmmo2,
 				//MXA_MACL_HPImpact,
 				//MXA_MACL_HPShrapnel,

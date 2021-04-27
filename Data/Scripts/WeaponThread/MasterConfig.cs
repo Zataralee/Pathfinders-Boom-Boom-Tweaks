@@ -44,6 +44,7 @@
 						MXA_BreakWaterB2,
 						MXA_BreakWaterB3,
 						MXA_Sabre_Coilgun,
+						MXA_SoFCoilgun,
 						MXA_MACL,
 						MXA_MACL_S,
 						MXA_SMAC,
@@ -53,7 +54,7 @@
 						MXA_M58ArcherPods,
 						MXA_M58ArcherPods_S,
 						MXA_Shiva,
-						
+						MXA_Moray,
 						//MW1
                         M12Swarm,
                         M2Destroyer,

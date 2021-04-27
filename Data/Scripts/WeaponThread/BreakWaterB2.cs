@@ -50,7 +50,7 @@ namespace WeaponThread {
             {
                 WeaponName = "Mark 15 Breakwater B2", // name of weapon in terminal
                 DeviateShotAngle = 0.15f,
-                AimingTolerance = 1.0f, // 0 - 180 firing angle
+                AimingTolerance = 3.0f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -71,7 +71,7 @@ namespace WeaponThread {
                 },
                 HardWare = new HardwareDef {
                     RotateRate = 0f,
-                    ElevateRate = 0.0024f,
+                    ElevateRate = 0.003f,
                     MinAzimuth = 0,
                     MaxAzimuth = 0,
                     MinElevation = -3,
@@ -148,8 +148,11 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_BreakWater_Ammo,
+				MXA_BreakWater_APFuse,
 				MXA_BreakWater_Shrapnel,
-				MXA_BreakWater_HEAmmo
+				MXA_BreakWater_HEAmmo,
+				MXA_BreakWater_GStage,
+				MXA_BreakWater_GAmmo,
 
             },
             Animations = MXA_BreakWaterB2_Animation,

@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.5f,
                         IconName = ""
                     },
                 },
@@ -82,7 +82,7 @@ namespace WeaponThread {
             HardPoint = new HardPointDef 
             {
                 WeaponName = "M42 Archer Missile Pods", // name of weapon in terminal
-                DeviateShotAngle = 0f,
+                DeviateShotAngle = 1f,
                 AimingTolerance = 0f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -112,7 +112,7 @@ namespace WeaponThread {
                     FixedOffset = false,
                     InventorySize = 2.5f,
                     Offset = Vector(x: 0, y: 0, z: 0),
-                    //Armor = IsWeapon, // IsWeapon, Passive, Active
+                    Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
                     GridWeaponCap = 0,
@@ -185,6 +185,8 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_ArcherPods_Ammo,
+				MXA_ArcherPods_Stage,
+				MXA_ArcherPods_Shrapnel,
             },
             Animations = MXA_ArcherPods_Animation,
             //Upgrades = UpgradeModules,

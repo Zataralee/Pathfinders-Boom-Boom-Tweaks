@@ -22,6 +22,7 @@
       <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_H_Coilgun" />
       <Members>
 		<BlockId Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunH" />
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SoFCoilgun" />
       </Members>
     </ResearchGroup>
 	
@@ -61,6 +62,13 @@
       <Members>
 		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_ArcherPods" />
         <BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_M58ArcherPods" />
+      </Members>
+    </ResearchGroup>
+	
+	<ResearchGroup xsi:type="ResearchGroup">
+      <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="MXA_Mines" />
+      <Members>
+		<BlockId Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Moray" />
       </Members>
     </ResearchGroup>
 

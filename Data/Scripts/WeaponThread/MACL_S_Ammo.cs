@@ -695,7 +695,7 @@ namespace WeaponThread
             AmmoMagazine = "MXA_MACL_S_Ammo",
             AmmoRound = "High Power",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 320f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 160f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 236f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1020,7 +1020,7 @@ namespace WeaponThread
             AmmoMagazine = "MXA_MACL_S_Ammo",
             AmmoRound = "MXA_MACL_S_HPAmmo",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.32f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0.16f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 236250f,
             Mass = 500f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1089,7 +1089,7 @@ namespace WeaponThread
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 3f,
+                    Modifier = 5f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },

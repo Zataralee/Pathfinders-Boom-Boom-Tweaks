@@ -162,8 +162,8 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = false,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 82500f,
-                    DetonationRadius = 10,
+                    DetonationDamage = 0,
+                    DetonationRadius = 0,
                     MinArmingTime = 0, //Min time in ticks before projectile will arm for detonation (will also affect shrapnel spawning)
                 },
                 EwarFields = new EwarFieldsDef
@@ -348,7 +348,7 @@ namespace WeaponThread
 		
 		private AmmoDef MXA_MACL_Shrapnel => new AmmoDef
         {
-            AmmoMagazine = "",
+            AmmoMagazine = "Energy",
             AmmoRound = "MXA_MACL_Shrapnel",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
@@ -477,7 +477,7 @@ namespace WeaponThread
                 Explosions = new ExplosionDef
                 {
                     NoVisuals = false,
-                    NoSound = false,
+                    NoSound = true,
                     NoShrapnel = false,
                     NoDeformation = false,
                     Scale = 1,
@@ -691,13 +691,12 @@ namespace WeaponThread
 		#endregion
 		
 		#region High Power Ammo
-		/*
-		private AmmoDef MXA_MACL_Impact => new AmmoDef
+		private AmmoDef MXA_MACL_HPAmmo => new AmmoDef
         {
             AmmoMagazine = "MXA_MACL_Ammo",
             AmmoRound = "High Power",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 320f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 160f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 315f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -719,7 +718,7 @@ namespace WeaponThread
             },
             Shrapnel = new ShrapnelDef
             {
-                AmmoRound = "MXA_MACL_HPAmmo",
+                AmmoRound = "MXA_MACL_Impact",
                 Fragments = 1,
                 Degrees = 0,
                 Reverse = false,
@@ -1016,19 +1015,19 @@ namespace WeaponThread
                 }
             },
         };
-		*/
-		private AmmoDef MXA_MACL_HPAmmo => new AmmoDef
+		
+		private AmmoDef MXA_MACL_Impact => new AmmoDef
         {
-            AmmoMagazine = "MXA_MACL_Ammo",
-            AmmoRound = "High Power",
-            HybridRound = true, //AmmoMagazine based weapon with energy cost
+            AmmoMagazine = "Energy",
+            AmmoRound = "MXA_MACL_Impact",
+            HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.64f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 315000f,
             Mass = 1300f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 24000000f,
+            BackKickForce = 0f,
             DecayPerShot = 0f,
-            HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
+            HardPointUsable = false, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             EnergyMagazineSize = 0,
             IgnoreWater = false,
 
@@ -1091,7 +1090,7 @@ namespace WeaponThread
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 3f,
+                    Modifier = 5f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },

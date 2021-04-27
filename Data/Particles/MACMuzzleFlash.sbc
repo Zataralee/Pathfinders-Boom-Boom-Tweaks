@@ -4,12 +4,12 @@
 		<ParticleEffect xsi:type="ParticleEffect">
 			<Id Type="MyObjectBuilder_ParticleEffect" Subtype="MXA_MACMuzzleFlash" />
 			<ParticleId>117005</ParticleId>
-			<Length>8</Length>
+			<Length>1</Length>
 			<Preload>0</Preload>
 			<LowRes>false</LowRes>
-			<Loop>false</Loop>
-			<DurationMin>2</DurationMin>
-			<DurationMax>2</DurationMax>
+			<Loop>true</Loop>
+			<DurationMin>.975</DurationMin>
+			<DurationMax>.975</DurationMax>
 			<Version>0</Version>
 			<ParticleGenerations>				
 				<ParticleGeneration Name="Smoke" Version="0">

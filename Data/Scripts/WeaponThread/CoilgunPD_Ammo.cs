@@ -88,12 +88,12 @@ namespace WeaponThread
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = 0.8f,
+                    Heavy = -1f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1.25f,
+                    Modifier = -1f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
@@ -417,7 +417,7 @@ namespace WeaponThread
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1.25f,
+                    Modifier = -1f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },

@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.25f,
                         IconName = ""
                     },
                 },
@@ -76,14 +76,14 @@ namespace WeaponThread {
                     LockOnFocus = false,
                 },
                 HardWare = new HardwareDef {
-                    RotateRate = 0.0075f,
-                    ElevateRate = 0.008f,
+                    RotateRate = 0.0085f,
+                    ElevateRate = 0.0075f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = 0,
                     MaxElevation = 100,
                     FixedOffset = false,
-                    InventorySize = 0.330f,
+                    InventorySize = 1.26f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                     //Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
@@ -93,7 +93,7 @@ namespace WeaponThread {
                     EnergyPriority = 0,
                     MuzzleCheck = false,
                     Debug = false,
-                    RestrictionRadius = 8f, // Meters, radius of sphere disable this gun if another is present
+                    RestrictionRadius = 0f, //8f // Meters, radius of sphere disable this gun if another is present
                     CheckInflatedBox = false, // if true, the bounding box of the gun is expanded by the RestrictionRadius
                     CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
@@ -158,8 +158,11 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_CoilgunH_Ammo,
+				MXA_CoilgunH_APFuse,
 				MXA_CoilgunH_Shrapnel,
 				MXA_CoilgunH_HEAmmo,
+				MXA_CoilgunH_GStage,
+				MXA_CoilgunH_GAmmo,
             },
             Animations = MXA_CoilgunH_Animation,
             //Upgrades = UpgradeModules,

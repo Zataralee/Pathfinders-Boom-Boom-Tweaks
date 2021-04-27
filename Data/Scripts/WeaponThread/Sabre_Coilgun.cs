@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.5f,
                         IconName = ""
                     },
 					new MountPointDef {
@@ -31,7 +31,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.25f,
                         IconName = ""
                     },
                 },
@@ -83,16 +83,16 @@ namespace WeaponThread {
                     LockOnFocus = false,
                 },
                 HardWare = new HardwareDef {
-                    RotateRate = 0.02f,
-                    ElevateRate = 0.015f,
-                    MinAzimuth = -180,
-                    MaxAzimuth = 180,
+                    RotateRate = 0f,
+                    ElevateRate = 0f,
+                    MinAzimuth = 0,
+                    MaxAzimuth = 0,
                     MinElevation = 0,
-                    MaxElevation = 100,
+                    MaxElevation = 0,
                     FixedOffset = false,
                     InventorySize = 0.060f,
                     Offset = Vector(x: 0, y: 0, z: 0),
-                    //Armor = IsWeapon, // IsWeapon, Passive, Active
+                    Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
                     GridWeaponCap = 0,
@@ -109,7 +109,7 @@ namespace WeaponThread {
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 60, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)

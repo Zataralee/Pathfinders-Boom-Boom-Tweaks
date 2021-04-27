@@ -418,7 +418,7 @@
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="2" z="5"/>
-			<ModelOffset x="0" y="1.25" z="-2.5"/>
+			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Coilguns\MXA_BreakWater.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<MirroringY>Z</MirroringY>
@@ -449,7 +449,7 @@
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>750</PCU>
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="1.45" StartY="2.45" EndX="3.55" EndY="4.55" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="1.00" StartY="1.00" EndX="4.00" EndY="4.00" Default="true" PressurizedWhenOpen="true"/>
 			</MountPoints>
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_BreakWater_BS1.mwm"/>
@@ -457,6 +457,73 @@
 				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_BreakWater_BS3.mwm"/>
 			</BuildProgressModels>
 			<BlockPairName>MXA_BreakWater</BlockPairName>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MXA_SoFCoilgun</SubtypeId>
+			</Id>
+			<DisplayName>11A2R1 Deckgun</DisplayName>
+			<Description>The 11A2R1 naval coilgun battery is a large coilgun mounted on some UNSC warships.
+			
+			Engagement Range: 6k 
+			Ammo: 270mm Coilgun Rounds
+			</Description>
+			<Icon>Textures\GUI\Icons\MXA_SoFCoilgun.png</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Coilguns\MXA_SoFCoilgun.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<MirroringY>Z</MirroringY>
+		    <MirroringZ>Y</MirroringZ>
+			<Components>
+             <Component Subtype="SteelPlate" Count="250" />
+	     <Component Subtype="SuperComputer" Count="100" />
+             <Component Subtype="Construction" Count="75" />
+             <Component Subtype="MetalGrid" Count="50" />
+             <Component Subtype="LargeTube" Count="4" />
+             <Component Subtype="Motor" Count="20" />
+	         <Component Subtype="Superconductor" Count="60" />	
+			 <Component Subtype="PowerCell" Count="320" />
+             <Component Subtype="Computer" Count="40" />
+             <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="MXA_CoilgunH" />
+			<InventoryMaxVolume>4.0</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<BuildTimeSeconds>60</BuildTimeSeconds>
+			<DisassembleRatio>1.25</DisassembleRatio>
+			<NavigationDefinition>Default</NavigationDefinition>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>350</PCU>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="2.04" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="2.04" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="2.04" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="2.04" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Enabled="false"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Coilguns\MXA_SoFCoilgun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Coilguns\MXA_SoFCoilgun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Coilguns\MXA_SoFCoilgun_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MXA_SoFCoilgun</BlockPairName>
 		</Definition>
 		
 		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">

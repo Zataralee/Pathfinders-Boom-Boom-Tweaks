@@ -5,12 +5,13 @@
 		<BlockVariantGroup>
 			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MXA_Coilgun" />
 			<Icon>Textures\GUI\Icons\MXA_CoilgunH.png</Icon>
-			<DisplayName>UNSC Coilgun Turrets</DisplayName>
+			<DisplayName>UNSC Naval Autocannon Turrets</DisplayName>
 			<Description></Description>
 			<Blocks>
 				<Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunH" />
 				<Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunL" />
 				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_BreakWater" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SoFCoilgun" />
 			</Blocks>
 		</BlockVariantGroup>
 		

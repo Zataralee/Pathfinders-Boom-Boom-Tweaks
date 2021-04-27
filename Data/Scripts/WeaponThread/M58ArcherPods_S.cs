@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.5f,
                         IconName = ""
                     },
                 },
@@ -185,6 +185,8 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_M58ArcherPods_S_Ammo,
+				MXA_M58ArcherPods_S_Stage,
+				MXA_M58ArcherPods_S_Shrapnel,
             },
             Animations = MXA_M58ArcherPods_S_Animation,
             //Upgrades = UpgradeModules,

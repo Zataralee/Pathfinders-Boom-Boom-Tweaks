@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.5f,
                         IconName = ""
                     },
                 },
@@ -66,7 +66,7 @@ namespace WeaponThread {
                     Grids,
                 },
                 SubSystems = new[] {
-                    Thrust, Utility, Offense, Power, Production, Any,
+                    /*Thrust, Utility, Offense, Power, Production,*/ Any,
                 },
                 ClosestFirst = false, // tries to pick closest targets first (blocks on grids, projectiles, etc...).
                 IgnoreDumbProjectiles = false, // Don't fire at non-smart projectiles.
@@ -112,7 +112,7 @@ namespace WeaponThread {
                     FixedOffset = false,
                     InventorySize = 1.25f,
                     Offset = Vector(x: 0, y: 0, z: 0),
-                    //Armor = IsWeapon, // IsWeapon, Passive, Active
+                    Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
                     GridWeaponCap = 0,
@@ -185,6 +185,8 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_M58ArcherPods_Ammo,
+				MXA_M58ArcherPods_Stage,
+				MXA_M58ArcherPods_Shrapnel,
             },
             Animations = MXA_M58ArcherPods_Animation,
             //Upgrades = UpgradeModules,

@@ -22,7 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        //DurabilityMod = 0.75f,
+                        DurabilityMod = 0.25f,
                         IconName = ""
                     },
                 },
@@ -43,7 +43,7 @@ namespace WeaponThread {
                 },
                 ClosestFirst = true, // tries to pick closest targets first (blocks on grids, projectiles, etc...).
                 IgnoreDumbProjectiles = true, // Don't fire at non-smart projectiles.
-                LockedSmartOnly = true, // Only fire at smart projectiles that are locked on to parent grid.
+                LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 3, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
                 MaxTargetDistance = 5000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
@@ -76,16 +76,16 @@ namespace WeaponThread {
                     LockOnFocus = false,
                 },
                 HardWare = new HardwareDef {
-                    RotateRate = 0.0084375f,
-                    ElevateRate = 0.01125f,
+                    RotateRate = 0.03f,
+                    ElevateRate = 0.02f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -4,
                     MaxElevation = 100,
                     FixedOffset = false,
-                    InventorySize = 0.550f,
+                    InventorySize = 1.10f,
                     Offset = Vector(x: 0, y: 0, z: 0),
-                    //Armor = IsWeapon, // IsWeapon, Passive, Active
+                    Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
                     GridWeaponCap = 0,
@@ -93,7 +93,7 @@ namespace WeaponThread {
                     EnergyPriority = 0,
                     MuzzleCheck = false,
                     Debug = false,
-                    RestrictionRadius = 8, // Meters, radius of sphere disable this gun if another is present
+                    RestrictionRadius = 0,//8f // Meters, radius of sphere disable this gun if another is present
                     CheckInflatedBox = false, // if true, the bounding box of the gun is expanded by the RestrictionRadius
                     CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
@@ -129,8 +129,8 @@ namespace WeaponThread {
                 Graphics = new HardPointParticleDef {
 
                     Barrel1 = new ParticleDef {
-                        Name = "MXA_MuzzleFlash", // Smoke_LargeGunShot
-                        Color = Color(red: .05f, green: .05f, blue: .05f, alpha: 1),
+                        Name = "MXA_SmallCoilgunMuzzleFlash", // Smoke_LargeGunShot
+                        Color = Color(red: .095f, green: .075f, blue: .05f, alpha: .25f),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef {

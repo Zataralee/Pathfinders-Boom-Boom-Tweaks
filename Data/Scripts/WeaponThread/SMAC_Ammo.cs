@@ -476,8 +476,8 @@ namespace WeaponThread
                 },
                 Explosions = new ExplosionDef
                 {
-                    NoVisuals = false,
-                    NoSound = false,
+                    NoVisuals = true,
+                    NoSound = true,
                     NoShrapnel = false,
                     NoDeformation = false,
                     Scale = 1,
@@ -821,7 +821,7 @@ namespace WeaponThread
                 },
                 Explosions = new ExplosionDef
                 {
-                    NoVisuals = true,
+                    NoVisuals = false,
                     NoSound = true,
                     NoShrapnel = false,
                     NoDeformation = false,
@@ -1146,7 +1146,7 @@ namespace WeaponThread
                 },
                 Explosions = new ExplosionDef
                 {
-                    NoVisuals = false,
+                    NoVisuals = true,
                     NoSound = true,
                     NoShrapnel = false,
                     NoDeformation = false,

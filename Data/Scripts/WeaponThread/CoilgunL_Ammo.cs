@@ -87,13 +87,13 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = 1.25f,
-                    Light = -1f,
+                    Light = 0.5f,
                     Heavy = -1f,
                     NonArmor = 0.75f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.6f,
+                    Modifier = 1.5f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
@@ -271,9 +271,9 @@ namespace WeaponThread
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 7.5f,
+                        Length = 15f,
                         Width = 0.1f,
-                        Color = Color(red: 7.5f, green: 6.25f, blue: 3.75f, alpha: 1f),
+                        Color = Color(red: 15f, green: 12.5f, blue: 7.5f, alpha: 1f),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -304,8 +304,8 @@ namespace WeaponThread
 							"WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 2,
-                        Color = Color(red: 1.875f, green: 1.5625f, blue: 0.9375f, alpha: 1f),
+                        DecayTime = 6,
+                        Color = Color(red: 1.875f, green: 1.5625f, blue: 0.9375f, alpha: 0.5f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
@@ -350,7 +350,7 @@ namespace WeaponThread
             AmmoRound = "MXA_CoilgunL_Shrapnel",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 75f,
+            BaseDamage = 250f,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -395,14 +395,14 @@ namespace WeaponThread
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.5, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 0.1, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 10,
                 Characters = -1f,
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 FallOff = new FallOffDef
                 {
-                    Distance = 20f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.2f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 10f, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.4f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -411,7 +411,7 @@ namespace WeaponThread
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = .75f,
+                    Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 2f,
@@ -508,11 +508,11 @@ namespace WeaponThread
             },
             Beams = new BeamDef
             {
-                Enable = false,
+                Enable = true,
                 VirtualBeams = false, // Only one hot beam, but with the effectiveness of the virtual beams combined (better performace)
-                ConvergeBeams = false, // When using virtual beams this option visually converges the beams to the location of the real beam.
+                ConvergeBeams = true, // When using virtual beams this option visually converges the beams to the location of the real beam.
                 RotateRealBeam = false, // The real (hot beam) is rotated between all virtual beams, instead of centered between them.
-                OneParticle = false, // Only spawn one particle hit per beam weapon.
+                OneParticle = true, // Only spawn one particle hit per beam weapon.
             },
             Trajectory = new TrajectoryDef
             {
@@ -521,7 +521,7 @@ namespace WeaponThread
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1500,
+                DesiredSpeed = 0f,
                 MaxTrajectory = 40f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -612,10 +612,10 @@ namespace WeaponThread
                     WidthVariance = Random(start: 0f, end: 0.25f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
-                        Enable = true,
+                        Enable = false,
                         Length = 1f,
                         Width = 0.1f,
-                        Color = Color(red: 3, green: 3, blue: 3f, alpha: 1),
+                        Color = Color(red: 10, green: 3, blue: 3f, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -761,7 +761,7 @@ namespace WeaponThread
                 Shields = new ShieldDef
                 {
                     Modifier = 1f,
-                    Type = Energy,
+                    Type = Kinetic,
                     BypassModifier = -1f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
@@ -938,7 +938,7 @@ namespace WeaponThread
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 7.5f,
+                        Length = 15f,
                         Width = 0.1f,
                         Color = Color(red: 7.5f, green: 6.25f, blue: 3.75f, alpha: 1f),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
@@ -1018,7 +1018,7 @@ namespace WeaponThread
             AmmoRound = "Flak",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 15f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1f, //1485f
+            BaseDamage = 10f, //1485f
             Mass = 75f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 5000f,
@@ -1111,7 +1111,7 @@ namespace WeaponThread
             },
             AreaEffect = new AreaDamageDef
             {
-                AreaEffect = Explosive, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
+                AreaEffect = Radiant, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
                 Base = new AreaInfluence
                 {
                     Radius = 0f, // the sphere of influence of area effects
@@ -1155,7 +1155,7 @@ namespace WeaponThread
                     DetonateOnEnd = true,
                     ArmOnlyOnHit = false,
                     DetonationDamage = 0f,
-                    DetonationRadius = 250f,
+                    DetonationRadius = 100f,
                     MinArmingTime = 0, //Min time in ticks before projectile will arm for detonation (will also affect shrapnel spawning)
                 },
                 EwarFields = new EwarFieldsDef
@@ -1193,8 +1193,8 @@ namespace WeaponThread
                 MaxTrajectory = 5000f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 200), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 25, end: 0), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 150), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
@@ -1265,9 +1265,9 @@ namespace WeaponThread
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 7.5f,
+                        Length = 15f,
                         Width = 0.1f,
-                        Color = Color(red: 10.5f, green: 6.25f, blue: 3.75f, alpha: 1f),
+                        Color = Color(red: 20.5f, green: 6.25f, blue: 3.75f, alpha: 1f),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -1298,8 +1298,8 @@ namespace WeaponThread
 							"WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 2,
-                        Color = Color(red: 1.875f, green: 1.5625f, blue: 0.9375f, alpha: 1f),
+                        DecayTime = 3,
+                        Color = Color(red: 1.875f, green: 1.5625f, blue: 0.9375f, alpha: .5f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
@@ -1364,9 +1364,9 @@ namespace WeaponThread
             },
             Shrapnel = new ShrapnelDef
             {
-                AmmoRound = "",
-                Fragments = 1,
-                Degrees = 0,
+                AmmoRound = "MXA_CoilgunL_Shrapnel",
+                Fragments = 25,
+                Degrees = 360,
                 Reverse = false,
                 RandomizeDir = false, // randomzie between forward and backward directions
             },
@@ -1405,14 +1405,14 @@ namespace WeaponThread
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
-                    Heavy = 0.5f,
+                    Light = 0.5f,
+                    Heavy = -1f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 3f,
-                    Type = Energy,
+                    Modifier = 2.5f,
+                    Type = Kinetic,
                     BypassModifier = -1f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
@@ -1479,7 +1479,7 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = true,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 600,
+                    DetonationDamage = 400,
                     DetonationRadius = 10f,
                     MinArmingTime = 0, //Min time in ticks before projectile will arm for detonation (will also affect shrapnel spawning)
                 },

@@ -12,6 +12,13 @@
     </ResearchBlock>
 	
 	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_SoFCoilgun" />
+      <UnlockedByGroups>
+        <GroupSubtype>MXA_Coilgun</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
       <Id Type="MyObjectBuilder_LargeMissileTurret" Subtype="MXA_CoilgunL" />
       <UnlockedByGroups>
         <GroupSubtype>8</GroupSubtype>
@@ -104,6 +111,13 @@
       <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Shiva" />
       <UnlockedByGroups>
         <GroupSubtype>MXA_Missile</GroupSubtype>
+      </UnlockedByGroups>
+    </ResearchBlock>
+	
+	<ResearchBlock xsi:type="ResearchBlock">
+      <Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MXA_Moray" />
+      <UnlockedByGroups>
+        <GroupSubtype>8</GroupSubtype>
       </UnlockedByGroups>
     </ResearchBlock>
 

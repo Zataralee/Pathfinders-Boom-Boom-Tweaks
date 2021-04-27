@@ -78,7 +78,7 @@ namespace WeaponThread
 							new RelMove
                             {
                                 CenterEmpty = "",
-                                TicksToMove = 17580, //number of ticks to complete motion, 60 = 1 second
+                                TicksToMove = 6780, //number of ticks to complete motion, 60 = 1 second
                                 MovementType = Delay,
                                 LinearPoints = new XYZ[0],
                                 Rotation = Transformation(0, 0, 0), //degrees
@@ -229,7 +229,7 @@ namespace WeaponThread
 							new RelMove
                             {
                                 CenterEmpty = "",
-                                TicksToMove = 17580, //number of ticks to complete motion, 60 = 1 second
+                                TicksToMove = 6780, //number of ticks to complete motion, 60 = 1 second
                                 MovementType = Delay,
                                 LinearPoints = new XYZ[0],
                                 Rotation = Transformation(0, 0, 0), //degrees
@@ -360,7 +360,7 @@ namespace WeaponThread
 							new RelMove
                             {
                                 CenterEmpty = "",
-                                TicksToMove = 17580, //number of ticks to complete motion, 60 = 1 second
+                                TicksToMove = 6780, //number of ticks to complete motion, 60 = 1 second
                                 MovementType = Delay,
                                 LinearPoints = new XYZ[0],
                                 Rotation = Transformation(0, 0, 0), //degrees

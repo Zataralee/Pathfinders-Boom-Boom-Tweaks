@@ -22,6 +22,7 @@ namespace WeaponThread {
                         MuzzlePartId = "Elevation1",
                         AzimuthPartId = "Azimuth",
                         ElevationPartId = "Elevation1",
+						DurabilityMod = 0.25f,
                         IconName = ""
                     },
                 },
@@ -74,16 +75,16 @@ namespace WeaponThread {
                     LockOnFocus = true,
                 },
                 HardWare = new HardwareDef {
-                    RotateRate = 0.00375f,
-                    ElevateRate = 0.0024f,
+                    RotateRate = 0.004f,
+                    ElevateRate = 0.003f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -3,
                     MaxElevation = 100,
                     FixedOffset = false,
-                    InventorySize = 1f,
+                    InventorySize = 2.769f,
                     Offset = Vector(x: 0, y: 0, z: 0),
-                    //Armor = IsWeapon, // IsWeapon, Passive, Active
+                    Armor = IsWeapon, // IsWeapon, Passive, Active
                 },
                 Other = new OtherDef {
                     GridWeaponCap = 0,
@@ -156,8 +157,11 @@ namespace WeaponThread {
             },
             Ammos = new [] {
                 MXA_BreakWater_Ammo,
+				MXA_BreakWater_APFuse,
 				MXA_BreakWater_Shrapnel,
-				MXA_BreakWater_HEAmmo
+				MXA_BreakWater_HEAmmo,
+				MXA_BreakWater_GStage,
+				MXA_BreakWater_GAmmo,
             },
             Animations = MXA_BreakWater_Animation,
             //Upgrades = UpgradeModules,
